@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dylan Han's Awesome Websites</title>
-	<h1>Dylan Han's Awesome Websites</h1>
+    <meta name="viewport" content="width=device-width, intial-scale=1, user-scalable=no" />
+    <title>Dylan's Awesome Websites</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<nav>
-		<a href="https://dhan96.github.io/webclass/">Biography</a>
-		<a href="https://dhan96.github.io/FondueRestraunt/">Restraunt</a>
-	</nav>
+    <nav>
+        <h1 class="brand"><a href="#">Dylan's Websites</a></h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://dhan96.github.io/webclass/">Biography</a></li>
+            <li><a href="https://dhan96.github.io/FondueRestraunt/">Restraunt</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
+        </ul>
+        <div style="clear: both;"></div>
+    </nav>
+    <div class="responsive-bar">
+        <h3 class="brand"><a href="#">Websites</a></h3>
+        <h4 class="menu">Menu</h4>
+         <div style="clear: both;"></div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".menu").click(function(){
+                $("nav") .slideToggle(500);
+            })
+        })
+    </script>
 </body>
 </html>
